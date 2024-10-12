@@ -1,0 +1,68 @@
+.calculator {
+    border-style: solid;
+    width: 32rem;
+    margin: auto;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    border-width: 0.3px;
+    box-shadow: 0 0 10px grey;
+}
+
+.console {
+    text-align: end;
+    height: 5rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    font-size: 4rem;
+    background-color: rgb(215, 214, 214);
+    padding-right:1rem;
+}
+
+.button-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap:wrap;
+    margin: 2rem;
+}
+
+.number, .operator {
+    flex: 0 0 7rem;
+    aspect-ratio: 1/1;
+    border-radius: 3.5rem;
+    font-size: 2rem;
+    border-style: none;
+    cursor: pointer;
+}
+
+.number:active{
+    background-color: rgb(137, 137, 245);
+    transition: 0.1s background-color;
+}
+.operator:active{
+    background-color: rgb(170, 170, 170);
+    transition: 0.1s background-color;
+}
+
+.number {
+    background-color: rgb(216, 216, 248);
+}
+
+#calc {
+    background-color: rgb(253, 219, 146);
+}
+#calc:active {
+    background-color: rgb(246, 202, 92);
+    transition: 0.1s background-color;
+
+}
+
+#divide, #multiply, #subtract, #add {
+    background-color: rgb(255, 213, 220);
+}
+#divide:active, #multiply:active, #subtract:active, #add:active {
+    background-color: rgb(248, 167, 181);
+    transition: 0.1s background-color;
+
+}
